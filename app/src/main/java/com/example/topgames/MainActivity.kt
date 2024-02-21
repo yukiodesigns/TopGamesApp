@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
         val g1 = GameModel(R.drawable.card1,"Horizon Chase" )
         val g2 = GameModel(R.drawable.card2,"PUBG" )
         val g3 = GameModel(R.drawable.card3,"Head Ball 2" )
-        val g4 = GameModel(R.drawable.card4,"Fifa 2022" )
-        val g5 = GameModel(R.drawable.card5,"Fortnite" )
-        val g6 = GameModel(R.drawable.card6,"Hooked on You" )
+        val g4 = GameModel(R.drawable.card4,"Hooked on You" )
+        val g5 = GameModel(R.drawable.card5,"Fifa 2022" )
+        val g6 = GameModel(R.drawable.card6,"Fortnite" )
 
         games.add(g1)
         games.add(g2)
