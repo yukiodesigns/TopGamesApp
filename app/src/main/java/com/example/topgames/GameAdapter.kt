@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class GameAdapter(val gamesList:ArrayList<GameModel>): RecyclerView.Adapter<GameAdapter.MyViewHolder>() {
@@ -17,7 +18,11 @@ class GameAdapter(val gamesList:ArrayList<GameModel>): RecyclerView.Adapter<Game
         init{
            gameImg= itemView.findViewById(R.id.cardView)
            gameTitle = itemView.findViewById(R.id.cardTxt)
-//         itemView.setOnClickListener(){}
+           itemView.setOnClickListener(){
+               Toast.makeText(
+                   itemView.context, "You Chose: ${gamesList[adapterPosition].txtCard}", Toast.LENGTH_SHORT
+               ).show()
+           }
         }
 
     }
